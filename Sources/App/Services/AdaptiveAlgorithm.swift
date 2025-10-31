@@ -10,7 +10,7 @@ func generateAdaptivePlan(inputs: AlgorithmInputs) -> DailyPlanResponse {
     let actualBalance = lastCalorieIntake - expectedBurn
     
     // 3. Adjust Calorie Target Based on Goal
-    var targetCalories = adjustCalorieTarget(
+    let targetCalories = adjustCalorieTarget(
         profile: inputs.userProfile,
         weightTrend: weightTrend,
         actualBalance: actualBalance
